@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:src="@drawable/hearts"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="20dp"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/photo"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/t_title"
+                style="@style/textStyle"
+                android:text="제목 올곳"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                style="@style/textStyle"
+                android:text="작성자 올곳"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                style="@style/textStyle"
+                android:text="2023-02-13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+</RelativeLayout>

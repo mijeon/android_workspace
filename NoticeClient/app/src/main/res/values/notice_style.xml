@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_common">
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+    <style name="title_style" parent="text_common">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="text_style" parent="text_common">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+</resources>

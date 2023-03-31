@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <EditText
+            android:id="@+id/t_ip"
+            android:text="172.30.1.47"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"    />
+        <Button
+            android:id="@+id/bt_connect"
+            android:text="접속"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"    />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+
+        <TextView
+            android:id="@+id/t_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TextView>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <EditText
+            android:id="@+id/t_input"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"    />
+        <Button
+            android:id="@+id/bt_send"
+            android:text="전송"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"    />
+
+    </LinearLayout>
+
+</LinearLayout>

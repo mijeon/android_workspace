@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--    이 앱이 사용하게 될 권한 등록
+             과거(마시멜로) 이전 : 여기에 등록만 하면 앱이 언제든지 등록한 권한대로 스마트폰 제어 즉, 신고제
+             마시멜로부터  : 여기에 등록한 것 + 사용자로부터 직접 허락과 확인을 받아야 기능 구현 가능 즉, 허가제
+
+             모든 권한이 다 허가를 받아야 하는게 아니라, 권한 레벨이 danger 이상인 경우만 받으면 됨
+             그럼 danger 여부는 어떻게 판단? api에 공시되어 있음
+    -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--권한 레벨이 Danger가 아니므로 사용자에게 허락받지 않아도 됨-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+   <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+       android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.PhotoApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
